@@ -11,6 +11,7 @@ OpenLoop allows you to give OpenCode a task and have it keep working on it autom
 3. You manually cancel it
 
 This is perfect for iterative tasks like:
+
 - "Fix all TypeScript errors"
 - "Make all tests pass"
 - "Refactor this codebase to use async/await"
@@ -21,7 +22,7 @@ This is perfect for iterative tasks like:
 ### One-liner (recommended)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/square-key-labs/opencode-loop/refs/heads/main/setup.sh | bash
+curl -fsSL https://raw.githubusercontent.com/square-key-labs/opencode-loop/main/setup.sh | bash
 ```
 
 ### Manual Installation
@@ -66,10 +67,10 @@ cd opencode-loop
 
 ## Options
 
-| Option | Description | Default |
-|--------|-------------|---------|
-| `--max-iterations N` | Maximum number of iterations (0 = unlimited) | `0` |
-| `--completion-promise TEXT` | Custom completion signal text | `DONE` |
+| Option                      | Description                                  | Default |
+| --------------------------- | -------------------------------------------- | ------- |
+| `--max-iterations N`        | Maximum number of iterations (0 = unlimited) | `0`     |
+| `--completion-promise TEXT` | Custom completion signal text                | `DONE`  |
 
 ## How It Works
 
@@ -96,10 +97,10 @@ Or with a custom promise:
 
 ## Files Installed
 
-| File | Location | Description |
-|------|----------|-------------|
-| `open-loop.ts` | `~/.opencode/plugin/` | Main plugin file |
-| `loop.md` | `~/.opencode/command/` | `/loop` command |
+| File             | Location               | Description            |
+| ---------------- | ---------------------- | ---------------------- |
+| `open-loop.ts`   | `~/.opencode/plugin/`  | Main plugin file       |
+| `loop.md`        | `~/.opencode/command/` | `/loop` command        |
 | `cancel-loop.md` | `~/.opencode/command/` | `/cancel-loop` command |
 | `loop-status.md` | `~/.opencode/command/` | `/loop-status` command |
 
@@ -108,7 +109,7 @@ Or with a custom promise:
 ### Using the uninstall script
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/square-key-labs/opencode-loop/refs/heads/main/uninstall.sh | bash
+curl -fsSL https://raw.githubusercontent.com/square-key-labs/opencode-loop/main/uninstall.sh | bash
 ```
 
 Or if you cloned the repo:
