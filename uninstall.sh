@@ -37,7 +37,7 @@ rm -f "${OPENCODE_DIR}/command/loop-status.md"
 echo -e "${GREEN}✓ Files removed${NC}"
 
 # Clean up state files
-find "${HOME}" -name "open-loop.state.json" -path "*/.opencode/*" -delete 2>/dev/null || true
+find "${OPENCODE_DIR}" -name "open-loop.state.json" -delete 2>/dev/null || true
 echo -e "${GREEN}✓ State files cleaned${NC}"
 
 # Remove empty dirs
