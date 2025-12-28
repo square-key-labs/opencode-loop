@@ -20,9 +20,13 @@ echo -e "${NC}"
 
 # Confirm
 echo -e "${YELLOW}This will remove OpenLoop files from ~/.opencode${NC}"
-read -p "Continue? (y/N) " -n 1 -r
-echo
-[[ ! $REPLY =~ ^[Yy]$ ]] && echo -e "${YELLOW}Cancelled.${NC}" && exit 0
+if [ -t 0 ]; then
+    read -p "Continue? (y/N) " -n 1 -r
+    echo
+    [[ ! $REPLY =~ ^[Yy]$ ]] && echo -e "${YELLOW}Cancelled.${NC}" && exit 0
+else
+    echo -e "${YELLOW}Running in non-interactive mode (piped). Proceeding...${NC}"
+fi
 
 # Remove files
 echo -e "${BLUE}Removing files...${NC}"
