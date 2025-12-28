@@ -21,7 +21,7 @@ This is perfect for iterative tasks like:
 ### One-liner (recommended)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/square-key-labs/opencode-loop/main/setup.sh | bash
+curl -fsSL https://raw.githubusercontent.com/square-key-labs/opencode-loop/refs/heads/main/setup.sh | bash
 ```
 
 ### Manual Installation
@@ -108,7 +108,7 @@ Or with a custom promise:
 ### Using the uninstall script
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/square-key-labs/opencode-loop/main/uninstall.sh | bash
+curl -fsSL https://raw.githubusercontent.com/square-key-labs/opencode-loop/refs/heads/main/uninstall.sh | bash
 ```
 
 Or if you cloned the repo:
